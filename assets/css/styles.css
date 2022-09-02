@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed&display=swap');
+
+body{
+    margin-top: 0;
+}
+#truck-bg{
+    background-image: url("../images/truck-img.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 50rem;
+}
+
+#truck-bg>h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 3em;
+    padding: 1em;
+    width: 50%;
+    margin-bottom: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav>h1, 
+.nav-item{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+.nav-item{
+    font-size: 25px;
+    margin-right: 2rem;
+}
+
+#home{
+    color: #09B778;
+}
+
+.get-app{
+    color: #09B778;
+    background-color: Transparent;
+    border: 3px solid #09B778;
+    border-radius: 0.25em;
+    cursor:pointer;
+    padding: 0.5em;
+    width: 12em;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 3em;
+}
+
+.card-container{
+    padding: 70px;
+    width: calc(100% - 140px);
+}
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000066;
+    border-radius: 0.75em;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    height: 7em;
+    box-shadow: 11px 14px 15px rgb(0, 0, 0, 35%);
+}
+
+.card div{
+    width: 20%;
+    text-align: center;
+}
+
+#inner-card{
+    background-color: #000066;
+    color: #09B778;
+    font-size: 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 0.75em;
+    padding: 50px;
+    width: 20%;
+    line-height: normal;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    box-shadow: -2px 33px 21px rgb(0, 0, 0, 35%);
+}
+
