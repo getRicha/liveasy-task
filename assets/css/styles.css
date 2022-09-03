@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 body{
     margin-top: 0;
@@ -97,7 +98,7 @@ nav>h1,
     color: #09B778;
     font-size: 50px;
     border: 2px solid #FFFFFF;
-    border-radius: 0.75em;
+    border-radius: 0.5em;
     padding: 50px;
     width: 20%;
     line-height: normal;
@@ -107,3 +108,83 @@ nav>h1,
     box-shadow: -2px 33px 21px rgb(0, 0, 0, 35%);
 }
 
+.booking{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking h3{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.booking a{
+    text-align: center;
+    color: #157D04;
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-end;
+    /* border-bottom: 5px solid rgb(126, 110, 110, 38%); */
+}
+
+.visual-aid{
+    margin-left: 20rem;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image1{
+    position: relative;
+    top: 100px;
+    left: -200px;
+    z-index: 1;
+}
+
+.image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.process{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: end;
+}
+
+.process div, h4{
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.process div{
+    padding-left: 15px;
+}
+
+.process h4{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.process>h4{
+    padding-left: 15px;
+}
+
+.process p{
+    margin: 0;
+    font-size: large;
+    color: rgb(79, 73, 73, 58%);
+    line-height: 1.5;
+}
