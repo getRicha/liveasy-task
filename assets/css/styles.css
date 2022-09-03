@@ -131,7 +131,7 @@ nav>h1,
 .flex{
     display: flex;
     justify-content: flex-end;
-    /* border-bottom: 5px solid rgb(126, 110, 110, 38%); */
+    margin-bottom: 10rem;
 }
 
 .visual-aid{
@@ -187,4 +187,36 @@ nav>h1,
     font-size: large;
     color: rgb(79, 73, 73, 58%);
     line-height: 1.5;
+}
+
+div.center-border{
+    margin: 0 auto;
+    width: 60%;
+    border-top: 3px solid rgb(126, 110, 110, 38%);
+}
+
+.features{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.features div{
+    width: 20%;
+    text-align: center;
+}
+
+.features h5{
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.features p{
+    color: rgb(126, 110, 110, 72%);
+    font-size: 1.25em;
+    line-height: 1.25;
 }
