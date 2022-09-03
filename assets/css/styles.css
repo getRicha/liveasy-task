@@ -2,9 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
+/* CSS Variables */
+:root {
+    --font-family: 'Poppins', sans-serif;
+}
+
 body{
     margin-top: 0;
 }
+
+
 #truck-bg{
     background-image: url("../images/truck-img.png");
     background-size: 100% 100%;
@@ -128,10 +135,15 @@ nav>h1,
     font-size: 2em;
 }
 
-.flex{
+.flex-end{
     display: flex;
     justify-content: flex-end;
     margin-bottom: 10rem;
+}
+
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
 }
 
 .visual-aid{
@@ -141,11 +153,20 @@ nav>h1,
     left: 0;
 }
 
+.flex-start .visual-aid{
+    margin-left: 0;
+    margin-right: 15rem;
+}
+
 .image1{
     position: relative;
     top: 100px;
     left: -200px;
     z-index: 1;
+}
+
+.flex-start .image1{
+    left: 200px;
 }
 
 .image2 {
@@ -155,13 +176,15 @@ nav>h1,
 }
 
 .process{
+    margin-right: auto;
     margin-top: 5rem;
     display: grid;
     grid-template-columns: 40% 60%;
     justify-items: end;
 }
 
-.process div, h4{
+.process div,
+.process h4{
     justify-self: start;
     display: flex;
     flex-direction: column;
@@ -219,4 +242,183 @@ div.center-border{
     color: rgb(126, 110, 110, 72%);
     font-size: 1.25em;
     line-height: 1.25;
+}
+
+.gps-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001251;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    height: 20rem;
+}
+
+.gps-info img{
+    height: 30rem;
+}
+
+.gps-info div{
+    width: 20%;
+    text-align: center;
+}
+
+.info-map{
+    margin-top: 10rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-map .text{
+    text-align: center;
+    padding: 0 10em;
+}
+
+.info-map h3{
+    font-size: 3em;
+    margin: 0;
+}
+
+.info-map p{
+    font-size: 1.5em;
+    color: rgb(126, 110, 110, 67%);
+    line-height: 1.5;
+}
+
+.info-map .maps{
+    margin-top: 5em;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.info-map .maps img{
+    padding-left: 6em;
+    width: 75%;
+} 
+
+#map-nav{
+    width: 15%;
+    display: block;
+    margin: 5em auto;
+}
+
+.payment{
+    margin-left: 6em;
+    margin-bottom: 15em;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Poppins', sans-serif;
+}
+
+.payment .payment-process-info{
+    width: 30%;
+}
+
+.payment h3{
+    font-size: 3em;
+} 
+
+.payment h4{
+    font-size: 2em;
+    font-weight: normal;
+    color: rgb(126, 110, 110, 81%);
+} 
+
+.payment h2{
+    line-height: 1.5em;
+    font-size: 2em;
+    color: #034852;
+} 
+
+.payment .stacked{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#done-button{
+    width: 15em;
+    position: relative;
+    top: 4em;
+    left: 5em;
+    z-index: 1;
+}
+
+.payment .stacked img+img{
+    position: absolute;
+    top: 0;
+    left: 10em;
+    width: 40em;
+}
+
+.products{
+    font-family: var(--font-family);
+}
+
+.products h3{
+    text-align: center;
+    font-size: 3em;
+}
+
+.products .switch-buttons{
+    position: relative;
+}
+
+.switch-buttons button{
+    border: none;
+    border-radius: 1.5em;
+    height: 3em;
+    width: 15em;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.active{
+    color: white;
+    background-color: #034852;
+    position: relative;
+    left: 18em;
+    z-index: 1;
+}
+
+.inactive{
+    background-color: rgb(126, 110, 110, 30%);
+    position: absolute;
+    left: 29em;
+    z-index: 0;
+}
+
+.products .app-info{
+    width: 40%;
+    margin-top: 5em;
+}
+
+.app-info h4{
+    color: #032086;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.app-info p{
+    line-height: 1.5em;
+    font-size: 1.5em;
+    margin-bottom: 3em;
+}
+
+.app-info img{
+    height: 5em;
+}
+
+.app-info button{
+    display: flex;
+    align-items: center;
+    border-radius: 1.5em;
+    background-color: #001251;
+    margin: 0 10em;
+    width: 17em;
+}
+
+.app-info button a{
+    color: white;
 }
