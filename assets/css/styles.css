@@ -422,3 +422,36 @@ div.center-border{
 .app-info button a{
     color: white;
 }
+
+.review{
+    margin: 10em;
+    border: 1px solid #02B0C8;
+    box-shadow: -2px 5px 39px #032086;
+    font-family: var(--font-family);
+}
+
+.review p{
+    margin: 0;
+    padding: 2em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.review h4{
+    font-size: 1.5em;
+    margin: 10px 15px;
+}
+
+#icon{
+    padding: 5em 0px 3em 5em;
+}
+
+.review div{
+    display: inline-block;
+}
+
+#review-nav{
+    margin: 5% 80%;
+    display: block;
+    width: 15%;
+}
