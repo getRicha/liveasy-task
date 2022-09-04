@@ -212,7 +212,7 @@ nav>h1,
     line-height: 1.5;
 }
 
-div.center-border{
+div.grey-border{
     margin: 0 auto;
     width: 60%;
     border-top: 3px solid rgb(126, 110, 110, 38%);
@@ -406,11 +406,7 @@ div.center-border{
     margin-bottom: 3em;
 }
 
-.app-info img{
-    height: 5em;
-}
-
-.app-info button{
+.download{
     display: flex;
     align-items: center;
     border-radius: 1.5em;
@@ -419,7 +415,11 @@ div.center-border{
     width: 17em;
 }
 
-.app-info button a{
+.download img{
+    height: 5em;
+}
+
+.download a{
     color: white;
 }
 
@@ -430,9 +430,10 @@ div.center-border{
     font-family: var(--font-family);
 }
 
-.review p{
+.review q{
+    display: block;
     margin: 0;
-    padding: 2em;
+    padding: 2em 2em 0 2em;
     font-size: 2em;
     text-align: center;
 }
@@ -454,4 +455,106 @@ div.center-border{
     margin: 5% 80%;
     display: block;
     width: 15%;
+}
+
+div.green-border{
+    margin: 0 auto;
+    width: 5%;
+    border-bottom: 3px solid #09B778;
+    padding-top: 50px;
+    
+}
+
+.about{
+    color: white;
+    background-color: #000000;
+    text-align: center;
+    padding: 0 5em;
+    font-family: var(--font-family);
+    font-size: 1.5em;
+}
+
+.about h2{
+    font-size: 2em;
+}
+
+.faq{
+    color: white;
+    background-color: #000000;
+    font-family: var(--font-family);
+}
+
+.faq h3{
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    text-decoration: underline;
+    padding-left: 4em;
+    padding-right: 15em;
+}
+
+.faq .select{
+    padding: 0.5em 3em;
+    border-radius: 2em;
+}
+
+.ques{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+    border-bottom: 3px solid rgb(126, 110, 110, 38%);
+}
+
+.ques h5{
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+.ques button{
+    border: none;
+    color: white;
+    background-color: #000000;
+}
+
+.faq h1{
+    display: inline-block;
+    padding-left: 2em;
+    font-size: 3em;
+}
+
+.faq .download{
+    display: inline-flex;
+    margin: 3em 0 0 3em;
+    background-color: rgb(217, 217, 217, 20%);
+}
+
+.nav-cols{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    color: rgb(126, 110, 110, 97%);
+    padding-bottom: 5em;
+}
+
+.nav-cols ul{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
+.nav-cols ul li:first-child{
+    font-size: 1.5em;
+    color: white;
+}
+
+.social{
+    text-align: center;
+    background-color: #000000;
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0.5em;
+    color: white;
 }
